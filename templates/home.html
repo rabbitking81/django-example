@@ -17,9 +17,25 @@
         <h2>Select Application</h2>
         <table id="applist">
             <tr>
-                <td><b><i><a href="#">Bookmark</a></i></b></td>
+                <td><b><i><a href="{% url 'index' %}">Bookmark</a></i></b></td>
                 <td>
-                    You can write your own post and share to others. Donec id elit non miporta gravida at eget metus. Fu
+                    You can write your own post and share to others. Donec id elit non miporta gravida at eget metus. Fusce dapibus. tellus ac cursus comnodo
+                </td>
+                <td class="Edit"><i><a href="#">Add</a></i></td>
+                <td class="Edit"><i><a href="#">Change</a></i></td>
+            </tr>
+            <tr>
+                <td><b><i><a href="{% url 'blog:index' %}">Blog</a></i></b></td>
+                <td>
+                    You can write your own post and share to others. Donec id elit non miporta gravida at eget metus. Fusce dapibus. tellus ac cursus comnodo
+                </td>
+                <td class="Edit"><i><a href="#">Add</a></i></td>
+                <td class="Edit"><i><a href="#">Change</a></i></td>
+            </tr>
+            <tr>
+                <td><b><i><a href="#">Photo</a></i></b></td>
+                <td>
+                    You can write your own post and share to others. Donec id elit non miporta gravida at eget metus. Fusce dapibus. tellus ac cursus comnodo
                 </td>
                 <td class="Edit"><i><a href="#">Add</a></i></td>
                 <td class="Edit"><i><a href="#">Change</a></i></td>
@@ -31,6 +47,6 @@
 
 {% block footer %}
     <div id="footer">
-        This is Footer area.
+        &copy; danny 2019
     </div>
 {% endblock %}
